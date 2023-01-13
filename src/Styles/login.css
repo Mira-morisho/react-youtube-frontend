@@ -1,0 +1,63 @@
+
+
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 10%;
+  }
+ 
+  .pagepricipal{
+width: 2px;
+  }
+
+  .login{
+  border: 1PX solid rgb(235, 226, 226);
+  border-radius: 15px;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: black;
+  }
+  
+  
+  .login h1{
+    padding-top: 7%;
+  }
+
+  .btn-login{
+    width: 300px;
+    border-radius: 15px;
+    height: 45px;
+    margin-top: 5%;
+    background-color:  rgb(177, 75, 75);
+    color: white;
+    border-style: none;
+  }
+  .acceuil{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%; 
+  }
+ 
+  
+  .titre{
+    color: rgb(177, 75, 75);
+    font-size: 30px;
+  }
+  /* LOgout*/
+  .btn-logout{
+    width: 80px;
+    height: 35px;
+    background-color:  rgb(177, 75, 75);
+    border-radius: 10px;
+    color: white;
+    margin-left: 6%;
+  }
+  .paraghe{
+   font-size: 16px;
+   margin-top: 2%;
+   margin-left: 1%;
+  }

@@ -1,0 +1,108 @@
+.videos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+
+  
+}
+
+.link{
+    text-decoration: none;
+}
+
+p{
+    width: 300px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.images{
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+    margin-left: 5%;
+    margin-top: 15%;
+    /* padding: 20px;  */
+    background-color: rgb(124, 80, 80);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.images:hover{
+    border: 1px solid rgb(144, 153, 153);
+    background-color: black;
+}
+
+img{
+    width: 100%;
+}
+/** lire video**/
+
+.video_lecture{
+    height: 500px;
+    margin-left: 30%;
+  width: 800px;
+    margin-top: 5%;
+}
+
+.video{
+    color: white;
+}
+.main_side{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    width: 80%;
+    /* width: 500px;
+    height: 500px; */
+
+}
+.video__link__style{
+    width: 25%;
+}
+.commentaire{
+    color: rgb(185, 163, 163);
+    margin: 2%;
+}
+.barcommentaire{
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    margin: 10px;
+    
+    
+}
+.alignementcommentaire{
+    display: flex;
+    flex-direction: row;
+      
+}
+.interface{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titresearch{
+    width: 90%;
+    color: rgb(243, 234, 234);
+    font-size: 15px;
+
+}
+
+.image{
+    height: 150px;
+    width: 200px;
+} 
+.input-videos{
+    display: flex;
+    flex-direction: column;
+}
+.loagin{
+    justify-content:center;
+    margin-top: 20%;
+}
+

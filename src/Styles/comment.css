@@ -1,0 +1,51 @@
+.profile-picture{
+    width: 4vw;
+    height: vh;
+    border-radius: 50%;
+}
+/* .contenaire{
+text-align: center;
+    
+} */
+.comment-part-2{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.comment-time{
+    display: flex;
+    flex-direction: row;
+   padding: 10px;
+}
+.time{
+     padding-left: 10px;
+}
+.comment-edit{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 45px;
+    width: 400px;
+    border-radius: 10px;
+}
+.form-button{
+    height:40px;
+    width: 110px;
+    border-bottom: 1px,1px,1px,1px;
+    margin-left: 1%;
+    background-color: rgb(240, 146, 146);
+}
+.form-comments{
+    margin-left: 8%;
+}
+.profile-user{
+    width: 4vw;
+    height: vh;
+    border-radius: 50%; 
+}
+.filter{
+margin-left: 10%;
+font-size: 25px;
+}

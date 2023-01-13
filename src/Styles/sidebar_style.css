@@ -1,0 +1,55 @@
+.sidebar{
+   display: flex;
+   flex-direction: row;
+    
+}
+.menu{
+    color: rgb(250, 244, 244);
+    font-family: initial;
+    padding-left: 10%;
+    
+}
+
+.cdn_symbole{
+    color: beige;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+    
+}
+.icones{
+    padding: 5%;
+    padding-bottom: 5%;
+    color:  rgb(177, 75, 75);
+    font-size: 20px;
+    padding-left: 5%;
+    margin-bottom: 3%;
+}
+h3{
+    font-size: 14px;
+    color:  rgb(177, 75, 75);
+    padding: 5%;
+    padding-left: 2%;
+    margin-bottom: 3%;
+    text-decoration: none;
+    
+}
+
+/* .home{
+        border: 1PX solid rgb(105, 63, 63);
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 5%;
+       margin-bottom: 15%;
+       background-color: white;
+       width: 160px;
+       height: 40px;
+       border-radius: 15px; 
+                                       
+        }
+        */
