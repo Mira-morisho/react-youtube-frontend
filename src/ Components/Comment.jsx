@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment/moment";
 import CommentForm from "./CommentForm";
+import "../Styles/comment.css";
 // import Like from "./Like";
 // import Dislike from "./Dislike";
 
@@ -47,7 +48,6 @@ const Comment = ({
                     setActiveComment({
                       id: comment._id,
                       type: "replying",
-                      sousmet,
                     })
                   }
                 >

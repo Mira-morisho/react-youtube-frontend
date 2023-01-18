@@ -96,7 +96,7 @@ const ProfileUpdate = () => {
               name=""
               id=""
               className="input_fields"
-              placeholder="https://github.com/Mira-Morisho"
+              placeholder="https://github.com/Mira-morisho"
             />
           </div>
         </div>

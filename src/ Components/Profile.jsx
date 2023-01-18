@@ -8,7 +8,7 @@ const Profile = () => {
   const [user, setUser] = useState([]);
   const { userId } = useParams();
 
-  const fetchData = `http://localhost:8100/api/user/${userId}`;
+  const fetchData = `http://localhost:3001/api/user/${userId}`;
   const accessToken = localStorage.getItem("token");
 
   useEffect(() => {
