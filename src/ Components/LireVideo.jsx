@@ -42,36 +42,7 @@ export default function LireVideo() {
             <h3>{query.get("commentaire")} </h3>
           </div>
         </div>
-        <Comments />
-
-        {/* <div className=" mes-commentaire">
-          <di className="imputajouter-commentaire">
-            <input
-              className="ajouter-commentaire"
-              type="text"
-              placeholder="Entrer votre commentaire"
-              onChange={(event) => setCommentaire(event.target.value)}
-            />
-            <button
-              onClick={sendComment()}
-              type="texte"
-              className=" boutoncomment"
-            >
-              Ajouter un commentaire{" "}
-            </button>
-          </di>
-          <div className="nom-utulisateur">
-            <h4 className="profil-utilisateur">Mira Morisho</h4>
-            <div> il ya 1h </div>
-          </div>
-          <div> Ça date ça donne des sencation de réécouter ça</div>
-          <div className="repondre-comment">
-            <div>
-              <FontAwesomeIcon icon={faHome} className="icones" />
-            </div>
-            <div className="sous-commentaire">Repondre</div>
-          </div>
-        </div> */}
+        <Comments videoId={id} currentUserId={localStorage.getItem("userId")} />
       </div>
     </>
   );

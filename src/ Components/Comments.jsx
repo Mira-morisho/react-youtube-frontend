@@ -10,20 +10,28 @@ import { useRouteError } from "react-router-dom";
 import "../Styles/comment.css";
 
 const socket = socketIO.connect("http://localhost:3001");
-const Comments = ({ currentUserId }) => {
+const Comments = ({ currentUserId, videoId }) => {
   const [backendComments, setBackendComments] = useState([]);
   const [activeComment, setActiveComment] = useState(null);
 
   const [userData, setUserData] = useState([]);
   const rootComments = backendComments
-    .filter((backendComment) => backendComment.parentComment === null)
+    .filter(
+      (backendComment) =>
+        backendComment.parentComment === null &&
+        backendComment.videoId === videoId
+    )
     .sort(
       (a, b) =>
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );
   const getReplies = (commentId) => {
     return backendComments
-      .filter((backendComment) => backendComment.parentComment === commentId)
+      .filter(
+        (backendComment) =>
+          backendComment.parentComment === commentId &&
+          backendComment.videoId === videoId
+      )
       .sort(
         (a, b) =>
           new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
@@ -34,7 +42,7 @@ const Comments = ({ currentUserId }) => {
     axios
       .post("http://localhost:3001/commentaire/", {
         message: text,
-        videoId: "1980431",
+        videoId: videoId,
         userId: localStorage.getItem("userId"),
         parentComment: parentComment,
       })

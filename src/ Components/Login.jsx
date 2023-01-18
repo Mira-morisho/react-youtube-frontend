@@ -3,6 +3,7 @@ import { GoogleLogin } from "react-google-login";
 import "../Styles/login.css";
 import { useNavigate } from "react-router-dom";
 import { render } from "@testing-library/react";
+import axios from "axios";
 
 export default function Login() {
   const clientId =
@@ -13,6 +14,26 @@ export default function Login() {
 
     const profilePhoto = res.profileObj["imageUrl"];
     localStorage.setItem("image", profilePhoto);
+
+    axios
+      .post("http://localhost:3001/user", {
+        name: res.profileObj.givenName + " " + res.profileObj.familyName,
+        email: res.profileObj.email,
+        imageUrl: res.profileObj.imageUrl,
+      })
+      .then(
+        (response) => {
+          console.log("Response : ", response, response.data.user.name);
+          localStorage.setItem("userId", response.data.user._id);
+          localStorage.setItem("imageUrl", response.data.user.imageUrl);
+          localStorage.setItem("userName", response.data.user.name);
+
+          navigate("/home");
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
 
     console.log(res.accessToken);
     const accessToken = res.accessToken;
