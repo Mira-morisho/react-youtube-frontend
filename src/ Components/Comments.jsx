@@ -8,6 +8,7 @@ import axios from "axios";
 import "../Styles/Videos_tyle.css";
 import { useRouteError } from "react-router-dom";
 import "../Styles/comment.css";
+import Like from "./Like";
 
 const socket = socketIO.connect("http://localhost:3001");
 const Comments = ({ currentUserId, videoId }) => {
@@ -81,6 +82,7 @@ const Comments = ({ currentUserId, videoId }) => {
           />
         </div>
         <CommentForm submitLabel="Send Comment" handleSubmit={addComment} />
+        {/* <Like /> */}
       </div>
       {rootComments.map((rootComment) => (
         <Comment

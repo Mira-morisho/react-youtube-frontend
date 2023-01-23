@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment/moment";
 import CommentForm from "./CommentForm";
 import "../Styles/comment.css";
-// import Like from "./Like";
+import Like from "./Like";
 // import Dislike from "./Dislike";
 
 const Comment = ({
@@ -38,8 +38,8 @@ const Comment = ({
         <div>
           <div>{comment.message}</div>
           <div className="comment-mentions">
-            {/* <Like />
-            <Dislike /> */}
+            <Like />
+            {/* <Dislike /> */}
             <div>
               {canReply && (
                 <div
